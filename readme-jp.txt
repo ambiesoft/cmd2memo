@@ -4,15 +4,14 @@ Author:trueFF（trueff@mail.goo.ne.jp）
 Ver: 1.0
 *******************************************************************************
 
-see http://ambiesoft.ddo.jp/english/ for more information.
+くわしくはhttp://ambiesoft.ddo.jp/main/ を見てください。
 
-Requirement:
+動作環境:
 Windows98,ME,2000,XP
 
-How to use:
-cmd2memo takes a starndard input that will be shown in notepad.exe.
-No files and no clipboard are created or tainted.
+使い方:
+cmd2memoは標準入力を受け取ってからnotepad.exeを起動してそれを渡して表示します。
 
-ex)
+例）
 > dir /b /od | cmd2memo
 
