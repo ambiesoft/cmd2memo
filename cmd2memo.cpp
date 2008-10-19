@@ -91,8 +91,11 @@ int _tmain(int argc, TCHAR* argv[])
 {
 	TCHAR szBuffer[BBBUUUFFF_SIZE];
 	string all;
-	DWORD dwRead = 0;
-	for( ;ReadFile(GetStdHandle(STD_INPUT_HANDLE), szBuffer, sizeof(szBuffer)-1, &dwRead, NULL) && dwRead != 0;)
+
+	for( DWORD dwRead = 0;
+		ReadFile(GetStdHandle(STD_INPUT_HANDLE), szBuffer, sizeof(szBuffer)-1, &dwRead, NULL) 
+			&& dwRead != 0
+			;)
 	{
 		szBuffer[dwRead]=0;
 		all += szBuffer;
